@@ -80,8 +80,12 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
 
 - **Frontend Output:**
   <p align="center">
-  <img src="https://raw.githubusercontent.com/ShraddhaAlhat/Forest-Fire-Prediction-ML-Model-End-to-End-/main/dataset-cover.jpg" alt="Image Description" width="300" height="200">
+  <img src="https://raw.githubusercontent.com/ShraddhaAlhat/Forest-Fire-Prediction-ML-Model-End-to-End-/main/Screenshot (22).png" alt="Image Description" width="900" height="500">
 </p>
+
+## Conclusion:
+  This project demonstrates the use of machine learning in predicting forest fires based on environmental factors. The deployment of the Ridge Regression model provides an effective solution for assessing 
+  fire risk and can be extended to real-time applications.
 
 
 
