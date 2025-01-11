@@ -50,14 +50,15 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
    ```bash
    cd Forest-Fire-Prediction
 3. **Run the Jupyter Notebook:**:
-  - Navigate to the notebook folder:
+  - Navigate to the `notebook` folder:
+    
     ```bash
      cd notebook
     ```
-  - Open the file Algerian Case Study.ipynb in Jupyter Notebook or any compatible IDE.
+  - Open the file `Algerian Case Study.ipynb` in Jupyter Notebook or any compatible IDE.
   - Run all the cells to preprocess the dataset and generate the required model files:
-    - Models/scaler.pkl
-    - Models/ridge.pkl
+     -  `Models/scaler.pkl`
+     - `Models/ridge.pkl`
 4. **Install Dependencies:**
  - Install all required Python libraries using the following command:
    ```bash
