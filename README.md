@@ -1,6 +1,10 @@
 # Algerian Forest Fire Prediction  
 
 A Machine Learning model to predict the **Fire Weather Index (FWI)** based on environmental attributes. This project utilizes Ridge Regression for high accuracy and incorporates a Flask-based frontend to provide an intuitive user interface.  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ShraddhaAlhat/Forest-Fire-Prediction-ML-Model-End-to-End-/main/dataset-cover.jpg" alt="Image Description" width="300" height="200">
+</p>
+
 
 ---
 
@@ -73,13 +77,13 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
  - Click on the URL to open the application in your browser.
 ---
 ### Screenshots
-- **Fire Image:**
-  
-  ![Fire Image](dataset-cover.jpg)
 
 - **Frontend Output:**
-  
-  ![Frontend Output](path_to_frontend_output_image.jpg)
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/ShraddhaAlhat/Forest-Fire-Prediction-ML-Model-End-to-End-/main/dataset-cover.jpg" alt="Image Description" width="300" height="200">
+</p>
+
+
 
 ---
 
