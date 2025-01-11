@@ -54,18 +54,7 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
    ```bash
      pip install -r requirements.txt
    ```
-4. **Run the Jupyter Notebook:**:
-  - Navigate to the `Notebook` folder:
-    
-    ```bash
-     cd Notebook
-    ```
-  - Open the file `Algerian Case Study.ipynb` in Jupyter Notebook or any compatible IDE.
-  - Run all the cells to preprocess the dataset and generate the required model files:
-     -  `Models/scaler.pkl`
-     - `Models/ridge.pkl`
-
-5 **Run the Flask Application:**
+4 **Run the Flask Application:**
 - Navigate back to the root folder:
   ```bash
    cd ..
@@ -74,7 +63,7 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
   ```bash
    python Application.py
   ```
-6. **Access the Application:**
+5. **Access the Application:**
  - After running Application.py, a URL will be displayed in the terminal (e.g., http://127.0.0.1:5000/).
  - Click on the URL to open the application in your browser.
 ---
