@@ -55,10 +55,6 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
      pip install -r requirements.txt
    ```
 4 **Run the Flask Application:**
-- Navigate back to the root folder:
-  ```bash
-   cd ..
-  ```
 - Run the Flask app using the following command:
   ```bash
    python Application.py
