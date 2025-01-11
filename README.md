@@ -48,23 +48,24 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
    git clone https://github.com/ShraddhaAlhat/Forest-Fire-Prediction-ML-Model-End-to-End-.git
 2. **Navigate to the Project Directory:**:    
    ```bash
-   cd Forest-Fire-Prediction
-3. **Run the Jupyter Notebook:**:
-  - Navigate to the `notebook` folder:
+   cd Forest-Fire-Prediction-ML-Model-End-to-End-
+3. **Install Dependencies:**
+ - Install all required Python libraries using the following command:
+   ```bash
+     pip install -r requirements.txt
+   ```
+4. **Run the Jupyter Notebook:**:
+  - Navigate to the `Notebook` folder:
     
     ```bash
-     cd notebook
+     cd Notebook
     ```
   - Open the file `Algerian Case Study.ipynb` in Jupyter Notebook or any compatible IDE.
   - Run all the cells to preprocess the dataset and generate the required model files:
      -  `Models/scaler.pkl`
      - `Models/ridge.pkl`
-4. **Install Dependencies:**
- - Install all required Python libraries using the following command:
-   ```bash
-     pip install -r requirements.txt
-   ```
-5. **Run the Flask Application:**
+
+5 **Run the Flask Application:**
 - Navigate back to the root folder:
   ```bash
    cd ..
