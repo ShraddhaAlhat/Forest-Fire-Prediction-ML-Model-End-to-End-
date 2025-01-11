@@ -17,7 +17,7 @@ The dataset contains **244 instances** collected from two regions in Algeria:
 The data covers the period from **June 2012 to September 2012**.  
 Key details:  
 - **Attributes**: 11 input features, including temperature, humidity, wind speed, and more.  
-- **Output**: Fire classification (Fire: 138 instances, Not Fire: 106 instances).  
+- **Output**: Fire Weather Index  
 
 ---
 
