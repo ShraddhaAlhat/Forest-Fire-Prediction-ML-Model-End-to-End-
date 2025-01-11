@@ -45,7 +45,7 @@ The Ridge model and StandardScaler were saved as `.pkl` files for deployment.
 1. **Clone the Repository**:  
    Clone the project from GitHub using the following command:  
    ```bash
-   git clone https://github.com/ShraddhaAlhat/Forest-Fire-Prediction.git
+   git clone https://github.com/ShraddhaAlhat/Forest-Fire-Prediction-ML-Model-End-to-End-.git
 2. **Navigate to the Project Directory:**:    
    ```bash
    cd Forest-Fire-Prediction
