@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algerian Forest Fire Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        form label {
+            font-weight: bold;
+            margin-bottom: 6px;
+            width: 100%;
+            color: #444;
+            font-size: 14px;
+        }
+        .form-group {
+            width: 48%;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        input[type="text"]:focus {
+            border-color: #007bff;
+            background-color: #fff;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Algerian Forest Fire Prediction</h2>
+        <form action="{{ url_for('predict_datapoints')}}" method="post">
+            <div class="form-group">
+                <label for="temperature">Temperature</label>
+                <input type="text" id="temperature" name="temperature" step="0.01" placeholder="Enter temperature" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rh">Relative Humidity (RH)</label>
+                <input type="text" id="rh" name="rh" step="0.01" placeholder="Enter RH value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ws">Wind Speed (Ws)</label>
+                <input type="text" id="ws" name="ws" step="0.01" placeholder="Enter wind speed" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rain">Rain</label>
+                <input type="text" id="rain" name="rain" step="0.01" placeholder="Enter rain value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ffmc">Fine Fuel Moisture Code (FFMC)</label>
+                <input type="text" id="ffmc" name="ffmc" step="0.01" placeholder="Enter FFMC value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dmc">Duff Moisture Code (DMC)</label>
+                <input type="text" id="dmc" name="dmc" step="0.01" placeholder="Enter DMC value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="isi">Initial Spread Index (ISI)</label>
+                <input type="text" id="isi" name="isi" step="0.01" placeholder="Enter ISI value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="classes">Classes (Numeric Representation)</label>
+                <input type="text" id="classes" name="classes" step="0.01" placeholder="Enter class value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region</label>
+                <input type="text" id="region" name="region" step="0.01" placeholder="Enter region value" required>
+            </div>
+
+            <button type="submit">Predict FWI</button>
+        </form>
+
+        <div class="result">
+            <h2>The FWI (Fire Weather Index) Prediction is: {{ result }}</h2>
+        </div>
+    </div>
+</body>
+</html>
